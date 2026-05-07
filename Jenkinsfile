@@ -79,10 +79,10 @@ pipeline {
                 publishHTML(target: [
                     reportDir: 'coverage',             // Directorio de resultados
                     reportFiles: 'index.html',         // Nombre del fichero de informe
-                    reportName: 'Coverage Report'      // Nombre de los informes
+                    reportName: 'Coverage Report',     // Nombre de los informes
                     keepAll: true,                     // Archiva históricos
                     alwaysLinkToLastBuild: true,       // Enlaza a la última ejecución
-                    allowMissing: true,                // Permite fallos si no están los ficheros
+                    allowMissing: true                 // Permite fallos si no están los ficheros
                 ])
             }
         }
