@@ -67,7 +67,7 @@
     No salía por defecto, he tenido que añadir esto: `-- --max-warnings=0` en el `sh` del paso `Code quality`
 
     ![Jenkins en estado inestable](capturas/15_Jenkins_estado_inestable.png)
-
+    ![Jenkins en estado inestable - detalle](capturas/16_Jenkins_estado_inestable_detalle.png)
 
 NOTA: Falta la actividad opcional de Docker, si saco un rato la miraré aparte.
 
