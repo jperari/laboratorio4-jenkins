@@ -44,7 +44,7 @@ pipeline {
                     steps {
                         // Opcional 4 - Code quality permisivo - Añade warnError con mensaje y cambia etiqueta
                         warnError('No se superaron los chequeos de calidad de código.') {
-                            sh 'npm run lint'
+                            sh 'npm run lint -- --max-warnings=0'
                         }
                         script {
                             if (currentBuild.result == 'UNSTABLE') {
